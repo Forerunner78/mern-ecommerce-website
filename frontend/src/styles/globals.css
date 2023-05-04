@@ -1,8 +1,18 @@
 html {
-    min-height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
+
 main {
+    min-height: 100vh;
     flex-grow: 1;
+}
+
+h3 {
+    padding: 1rem 0 0 0;
+}
+
+.rating span {
+    margin: 0.1 rem;
 }
