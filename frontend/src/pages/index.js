@@ -1,7 +1,5 @@
 import Head from "next/head";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Home() {
     return (
@@ -10,6 +8,13 @@ export default function Home() {
                 <title>Forerunner's Shop</title>
                 <meta name="description" content="Ecommerce website built with MERN" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <link
+                    rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+                    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+                    crossorigin="anonymous"
+                    referrerpolicy="no-referrer"
+                />
             </Head>
             <main>
                 <div>Hello World</div>
