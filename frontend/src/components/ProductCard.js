@@ -1,7 +1,7 @@
 import { Card } from "react-bootstrap";
 import Rating from "./Rating";
 
-const Product = ({ product }) => {
+const ProductCard = ({ product }) => {
     return (
         <Card className="my-3 p-3 rounded">
             <Card.Body>
@@ -19,4 +19,4 @@ const Product = ({ product }) => {
     );
 };
 
-export default Product;
+export default ProductCard;

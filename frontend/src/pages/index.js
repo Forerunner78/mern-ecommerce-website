@@ -18,11 +18,11 @@ export default function Home() {
                     referrerpolicy="no-referrer"
                 />
             </Head>
-            <body>
+            <main>
                 <Container>
                     <HomeScreen />
                 </Container>
-            </body>
+            </main>
         </>
     );
 }
