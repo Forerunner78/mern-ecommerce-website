@@ -1,8 +1,9 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import "@/styles/globals.css";
 import { Roboto } from "next/font/google";
 import { Container } from "react-bootstrap";
+import "@/styles/globals.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const roboto = Roboto({ subsets: ["latin"], weight: ["400", "700"] });
 
