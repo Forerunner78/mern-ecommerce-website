@@ -1,18 +1,24 @@
 {
-  "name": "mern-ecommerce-website",
-  "version": "1.0.0",
-  "description": "mern shopping cart app",
-  "main": "server.js",
-  "scripts": {
-    "start": "node backend/server"
-  },
-  "repository": {
-    "type": "git",
-    "url": "mern-ecommerce-website"
-  },
-  "author": "Alexandre Ribault",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.18.2"
-  }
+    "name": "mern-ecommerce-website",
+    "version": "1.0.0",
+    "description": "mern shopping cart app",
+    "main": "server.js",
+    "scripts": {
+        "server": "nodemon backend/server",
+        "client": "npm start --prefix frontend",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "mern-ecommerce-website"
+    },
+    "author": "Alexandre Ribault",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.18.2",
+        "nodemon": "^2.0.22"
+    },
+    "devDependencies": {
+        "concurrently": "^8.0.1"
+    }
 }
