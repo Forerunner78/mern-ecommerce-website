@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "mern shopping cart app",
     "main": "server.js",
+    "type": "module",
     "scripts": {
         "server": "nodemon backend/server",
         "client": "npm start --prefix frontend",
