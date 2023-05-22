@@ -5,6 +5,14 @@ import Link from "next/link";
 const ProductCard = ({ product }) => {
     return (
         <Card className="my-3 p-3 rounded">
+            <Link
+                href={{
+                    pathname: "/product/[productId]",
+                    query: { productId: product._id },
+                }}
+            >
+                <Card.Img src={product.image} variant="top" />
+            </Link>
             <Card.Body>
                 <Link
                     href={{
@@ -21,7 +29,7 @@ const ProductCard = ({ product }) => {
                 <Card.Text as="div">
                     <Rating value={product.rating} text={`${product.numReviews} reviews`} />
                 </Card.Text>
-                <Card.Text as="h3">{product.price}</Card.Text>
+                <Card.Text as="h3">{`${product.price} €`}</Card.Text>
             </Card.Body>
         </Card>
     );

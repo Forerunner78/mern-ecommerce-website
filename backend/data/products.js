@@ -91,7 +91,7 @@ const products = [
     },
     {
         name: "Belt",
-        image: "/productImages/belt_pant.jpg",
+        image: "/productImages/belt.jpg",
         description: "Belt",
         category: "Accessories",
         price: 15.99,
