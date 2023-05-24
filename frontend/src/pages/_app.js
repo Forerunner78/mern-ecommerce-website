@@ -6,6 +6,7 @@ import { Provider } from "react-redux";
 import store from "@/GlobalRedux/store";
 import "@/styles/globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Layout from "@/components/Layout";
 
 const roboto = Roboto({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -15,13 +16,11 @@ export default function App({ Component, pageProps }) {
             <main className={roboto.className}>
                 <Provider store={store}>
                     <Header />
-
-                    <div className="layout">
+                    <Layout>
                         <Container fluid>
                             <Component {...pageProps} />
                         </Container>
-                    </div>
-
+                    </Layout>
                     <Footer />
                 </Provider>
             </main>
